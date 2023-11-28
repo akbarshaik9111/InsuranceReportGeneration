@@ -19,6 +19,8 @@ public class DataLoader implements ApplicationRunner {
 	private CitizenPlanRepository repo;
 
 	public void run(ApplicationArguments args) throws Exception {
+		
+		repo.deleteAll();
 
 		// CASH PLAN
 		CitizenPlan c1 = new CitizenPlan();
